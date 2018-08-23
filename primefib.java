@@ -7,6 +7,8 @@ class hello{
         */
         int T = get.nextInt();
         int a=0,b=1,fib=0;
+        int isprime = 1;
+        int prime = 0;
 
         if(T%2==0){
             T = T/2;
@@ -26,8 +28,6 @@ class hello{
 
         else{
             T = (T/2) + 1;
-            int isprime = 1;
-            int prime = 0;
             for(int i=2; T>0; i++){
                 for(int j=2; j<i; j++){
                     if(i%j == 0){
@@ -41,9 +41,7 @@ class hello{
                 }
             }
             System.out.println(prime);
-
-
         }
-
+        
     }
 }
